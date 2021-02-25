@@ -1,0 +1,25 @@
+$headingColor: #3A3A3A;
+$lightColor:#9C9C9C;
+$lightBackground:#F7F7F7;
+$darkHeading:#B09E80;
+$activeColor:#D80808;
+$paraColor:#898989;
+$extraPadding:calc(4% + 3.8rem + 20px);
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@mixin page-padding {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+@mixin background-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
