@@ -16,7 +16,7 @@
                 <img src="./assets/logo.png" />
             </div>
             <div>
-                <img class="close" src="./assets/icons/close.svg" onclick="showPanel(false)" />
+                <img class="close-icon" src="./assets/icons/close.svg" onclick="showPanel(false)" />
             </div>
         </div>
         <div class="row flex-align">
@@ -65,7 +65,7 @@
                 <img class="close" src="./assets/icons/bar.svg" onclick="showPanel(true)" />
             </div>
         </div>
-        <div class="hero-part">
+        <div class="hero-part showSlide active-slide">
             <div class="content">
                 <h1>HANDPICKED FOR YOU
                 </h1>
@@ -86,13 +86,38 @@
                 </div>
             </div>
         </div>
+        <div class="hero-part showSlide">
+            <div class="content">
+                <h1>LIVING ROOM DECOR
+                </h1>
+                <button class="btn">EXPLORE</button>
+            </div>
+            <div class="banner-image banner-image2">
+                <div class="links"></div>
+                <div class="banner-text">
+                    <p><b>LIVING ROOM DECOR COLLECTION</b></p>
+                    <p>STARTS FROM $ 114.5</p>
+                </div>
+                <div class="links">
+                    <img src="./assets/icons/insta.svg" />
+                    <img src="./assets/icons/pinterest.svg" />
+                    <img src="./assets/icons/youtube.svg" />
+                    <img src="./assets/icons/twitter.svg" />
+                    <img src="./assets/icons/fb.svg" />
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+        </div>
         <div class="arrow-div">
             <div>
                 <p><b>Scroll</b></p>
             </div>
             <div class="arrow">
-                <img src="./assets/icons/arrow.svg" class="left-arrow" />
-                <img src="./assets/icons/arrow.svg" />
+                <img src="./assets/icons/arrow.svg" class="left-arrow" onclick="plusSlides(-1)" />
+                <img src="./assets/icons/arrow.svg" onclick="plusSlides(1)" />
             </div>
         </div>
         <div class="shop-by-room">

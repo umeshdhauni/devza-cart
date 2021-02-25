@@ -250,10 +250,12 @@ button:focus {
         align-items: center;
         justify-content: center;
         position: relative;
+        cursor: pointer;
 
         .arrow {
             position: absolute;
             right: 4%;
+            cursor: pointer;
 
             .left-arrow {
                 transform: rotate(180deg);
@@ -725,6 +727,9 @@ button:focus {
 
 
 @media only screen and (max-width: 500px) {
+    .dots{
+        display: none;
+    }
     .shop-by-room {
         padding: 4rem 5% 0 5% !important;
     }
@@ -959,7 +964,7 @@ button:focus {
             }
         }
 
-        .close {
+        .close-icon {
             height: 20px;
             cursor: pointer;
         }
@@ -998,7 +1003,7 @@ button:focus {
 @keyframes slideLeft {
     0% {
         opacity: 0;
-        transform: translateX(-80px);
+        transform: translateX(-60px);
     }
 
     100% {
@@ -1016,5 +1021,37 @@ button:focus {
     100% {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+
+.showSlide {
+    display: none;
+}
+
+.active-slide {
+    display: block;
+}
+
+.banner-image2 {
+    background-image: url('../assets/banner2.jpg') !important;
+}
+
+.dots {
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        border: 1px solid;
+        margin: 0.5rem 0;
+    }
+
+    .dot.active {
+        background: #3b3b3b;
+        border: none;
     }
 }
